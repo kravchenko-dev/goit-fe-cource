@@ -1,0 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.conteiner {
+    width: 901px;
+    margin: 0 auto;
+}
