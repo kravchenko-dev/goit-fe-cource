@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: "PlayfairDisplay, Ubuntu";
+    color: #626262;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.conteiner {
+    width: 901px;
+    margin: 0 auto;
+}
+.navigation {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.navigation li {
+    display: inline-block;
+}
+.navigation li:not(:last-child) {
+    margin-right: 92px;
+}
+.navigation a {
+    color: #626262;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+}
+.navigation a:hover,
+.navigation a:focus{
+    color:#25b4f5;
+}
+.conteiner article p.ubuntu {
+    font-family: "Ubuntu", seans-serif;
+    color: #b4ad9e;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.box {
+    display: inline-block;
+    width: 421px;
+}
+.article {
+    margin-right: 55px;
+}
+.article-two {
+    margin: 0;
+    padding: 0;
+}
