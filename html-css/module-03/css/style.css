@@ -1,4 +1,8 @@
-
+body {
+    font-family: "Playfair Display";
+    color: #818181;
+    font-weight: 400;
+}
 
 .conteiner {
     width: 901px;
@@ -6,89 +10,98 @@
     font-size: 0;
 }
 
-.page-nav {
+.header-nav {
     padding: 75px 0;
     padding-bottom: 100px;
 }
-.navigation {
+
+ul {
     margin: 0;
     padding: 0;
-    font-family: "Playfair Display";
-    color: #626262;
     font-size: 14px;
     text-align: center;
     vertical-align: middle;
 }
-.navigation li {
+
+li {
     display: inline-block;
 }
-.navigation li:not(:last-child) {
+
+li:not(:last-child) {
     margin-right: 92px;
 }
-.navigation a {
-    color: #626262;
+
+li a {
+    display: inline-block;
+    color: #818181;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 24px;
 }
-.navigation a:hover,
-.navigation a:focus{
-    color:#25b4f5;
+
+.list a:hover,
+.list a:focus {
+    color: #03a9f4;
 }
+
 .box {
     display: inline-block;
     width: 421px;
     margin-bottom: 132px;
 }
+
 .box:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
-.article {
+
+main .article {
     margin-right: 58px;
 }
+
 img {
     margin-bottom: 30px;
 }
-.ubuntu {
+
+.box .ubuntu {
     font-family: "Ubuntu", seans-serif;
-    color: #b4ad9e;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 14px;
     margin-bottom: 30px;
 }
+
 p {
     margin: 0;
     padding: 0;
 }
+
 h2.heading {
     margin: 0;
     padding: 0;
     margin-bottom: 38px;
-    font-family: "Playfair Display";
-    color: #626262;
     font-size: 30px;
 }
-.text {
-    font-family: "Playfair Display";
-    color: #626262;
+
+article .text {
     font-size: 14px;
     line-height: 24px;
 }
-.footer-button {
+
+button {
     width: 164px;
     height: 60px;
-    padding: 0;
-    background-color: #ffffff;
-    border-width: 1px;
-    border-color: #000000;
     margin-top: 88px;
     margin-right: 379px;
     margin-left: 358px;
     margin-bottom: 30px;
-    font-family: "Playfair Display";
+    padding: 0;
+}
+
+.footer-button {
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: #000000;
     font-size: 20px;
     line-height: 24px;
-    color: #626262;
+    color: #818181;
 }
