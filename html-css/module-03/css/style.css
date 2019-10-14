@@ -62,7 +62,7 @@ img {
     margin-bottom: 30px;
 }
 
-.box .ubuntu {
+.font-ubuntu {
     font-family: "Ubuntu", seans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ p {
     padding: 0;
 }
 
-h2.heading {
+h2 {
     margin: 0;
     padding: 0;
     margin-bottom: 38px;
