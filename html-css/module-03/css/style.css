@@ -11,8 +11,8 @@ body {
 }
 
 .header-nav {
-    padding: 75px 0;
-    padding-bottom: 100px;
+    padding: 76px 0;
+    padding-bottom: 104px;
 }
 
 ul {
@@ -47,7 +47,7 @@ li a {
 .box {
     display: inline-block;
     width: 421px;
-    margin-bottom: 132px;
+    margin-bottom: 138px;
 }
 
 .box:nth-last-child(-n + 3) {
@@ -55,7 +55,7 @@ li a {
 }
 
 main .article {
-    margin-right: 58px;
+    margin-right: 59px;
 }
 
 img {
@@ -90,10 +90,10 @@ article .text {
 button {
     width: 164px;
     height: 60px;
-    margin-top: 88px;
+    margin-top: 54px;
     margin-right: 379px;
     margin-left: 358px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     padding: 0;
 }
 
