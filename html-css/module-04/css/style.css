@@ -4,9 +4,9 @@ main {
     margin: 0 auto;
     font-size: 0;
 }
+
 /* header content */
-header 
-ul {
+header ul {
     float: right;
     margin-top: 43px;
 }
@@ -34,30 +34,36 @@ a {
     margin-top: 38px;
     color: #000000;
 }
+
 .logo::first-letter {
     font-weight: 900;
     color: #1abc9c;
 }
- header,
+
+header,
 main .main_conteiner {
     margin-bottom: 105px;
 }
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .header_menu :hover,
 .header_menu :focus {
     color: #1abc9c;
 }
- li {
+
+li {
     float: left;
 }
-.header_menu 
-li:not(:last-child) {
+
+.header_menu li:not(:last-child) {
     margin-right: 35px;
 }
+
 /* main_content */
 h2,
 .price,
@@ -66,6 +72,7 @@ h2,
     font-weight: 900;
     color: #515151;
 }
+
 h2 {
     text-transform: uppercase;
     margin: 0 auto;
@@ -73,6 +80,7 @@ h2 {
     font-size: 48px;
     line-height: 32px;
 }
+
 h2::after {
     display: block;
     content: "";
@@ -81,32 +89,35 @@ h2::after {
     background: #1abc9c;
     margin: 32px auto 92px;
 }
-.featured_content 
-li:not(:nth-child(4n)) {
+
+.featured_content li:not(:nth-child(4n)) {
     margin-right: 30px;
 }
-.featured_content 
-li:not(:nth-last-child(-n + 4)) {
+
+.featured_content li:not(:nth-last-child(-n + 4)) {
     margin-bottom: 30px;
 }
 
-.clearfix::after { 
-    content: ""; 
-    display: table; 
-    clear: both; 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
 .featured_content img {
     background-color: #e9f0fd;
 }
+
 /* .featured_content  */
 img,
 h4,
-.footer-article, 
+.footer-article,
 .product_text,
 button {
     clear: left;
     float: left;
 }
+
 .product_text {
     width: 188px;
     height: 33px;
@@ -114,57 +125,63 @@ button {
     padding: 0;
     background-color: #323232;
 }
+
 .product_text {
     margin: 0;
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
-    padding:7px 0 0 13px;
+    padding: 7px 0 0 13px;
 }
+
 .price {
     float: left;
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
-    background-color: rgba(50,50,50, 0.6);
-    
+    background-color: rgba(50, 50, 50, 0.6);
+
 }
+
 .price {
     margin: 0;
     padding: 4px 0 0 12px;
     width: 42px;
     height: 36px;
 }
+
 .hover:hover .product_text,
 .hover:focus .product_text {
     background-color: #1abc9c;
 }
+
 .hover:hover .price,
 .hover:focus .price {
-    background-color: rgba(26,188,156,0.6);
+    background-color: rgba(26, 188, 156, 0.6);
 }
-.featured_content :focus
-.product_text  {
+
+.featured_content :focus .product_text {
     background-color: #1abc9c;
 }
-.featured_content :focus
-.price {
-    background-color: rgba(26,188,156,0.6);
+
+.featured_content :focus .price {
+    background-color: rgba(26, 188, 156, 0.6);
 }
 
 /* footer contenteiner */
 .footer_conteiner h2 {
     color: #555252;
 }
-.footer_conteiner 
-li:not(:nth-child(3n)) {
+
+.footer_conteiner li:not(:nth-child(3n)) {
     margin-right: 30px;
 }
+
 .footer_conteiner li {
     width: 350px;
 }
+
 .footer_conteiner h4 {
-    /* display: inline-block; */
     margin: 0 0 28px 0;
     padding: 14px 0 0 0;
     font-family: "Open Sans";
@@ -173,6 +190,7 @@ li:not(:nth-child(3n)) {
     line-height: 26px;
     color: #555252;
 }
+
 h4::after {
     display: block;
     content: "";
@@ -181,6 +199,7 @@ h4::after {
     margin: 11px 0 0 0;
     background-color: #4ec6ab;
 }
+
 .footer_conteiner p {
     font-family: "Open Sans";
     font-weight: 400;
@@ -189,6 +208,7 @@ h4::after {
     color: #555252;
     margin: 0 0 13px 0;
 }
+
 button {
     font-family: "Open Sans";
     font-weight: 300;
@@ -196,8 +216,9 @@ button {
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    
+
 }
+
 button {
     width: 160px;
     height: 51px;
@@ -205,6 +226,7 @@ button {
     border-radius: 3px;
     border: none;
 }
+
 .footer_conteiner {
     margin-bottom: 46px;
 }
