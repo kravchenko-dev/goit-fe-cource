@@ -1,67 +1,93 @@
-.header_conteiner,
-.main_conteiner,
-.footer_conteiner {
+header,
+main {
     width: 1110px;
     margin: 0 auto;
+    font-size: 0;
 }
+/* header content */
 header 
 ul {
     float: right;
+    margin-top: 43px;
 }
-h2,
-.featured_content a {
-    font-family: "Roboto";
-    font-weight: 900;
-}
-h2 {
-    color: #515151;
-    text-transform: uppercase;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 48px;
-    line-height: 32px;
-}
+
 
 a {
     text-transform: uppercase;
+    text-decoration: none;
 }
-.header_conteiner {
-    color: #0f0101;
-}
+
 .header_menu a {
     font-family: "Open Sans";
     font-weight: 700;
     font-size: 14px;
     line-height: 11px;
-    color: #0f0101;
+    color: #000000;
 }
 
-/* .logo::first-letter {
-    font-family: "Roboto";
-    font-weight: 900;
-} */
 .logo {
     float: left;
+    font-family: "Roboto";
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-top: 38px;
+    color: #000000;
+}
+.logo::first-letter {
+    font-weight: 900;
+    color: #1abc9c;
+}
+ header,
+main .main_conteiner {
+    margin-bottom: 105px;
 }
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
+.header_menu :hover,
+.header_menu :focus {
+    color: #1abc9c;
+}
  li {
     float: left;
 }
-.featured_content
-li:nth-of-type(even4) {
+.header_menu 
+li:not(:last-child) {
+    margin-right: 35px;
+}
+/* main_content */
+h2,
+.price,
+.featured_content a {
+    font-family: "Roboto";
+    font-weight: 900;
+    color: #515151;
+}
+h2 {
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    line-height: 32px;
+}
+h2::after {
+    display: block;
+    content: "";
+    width: 164px;
+    height: 7px;
+    background: #1abc9c;
+    margin: 32px auto 92px;
+}
+.featured_content 
+li:not(:nth-child(4n)) {
     margin-right: 30px;
 }
 .featured_content 
-li:nth-last-child(-n + 4) {
-    margin-bottom: 0;
-}
-a {
-    text-decoration: none;
+li:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 30px;
 }
 
 .clearfix::after { 
@@ -69,19 +95,116 @@ a {
     display: table; 
     clear: both; 
 }
-.featured_content p {
-    width: 200px;
-    height: 42px;
+.featured_content img {
+    background-color: #e9f0fd;
+}
+/* .featured_content  */
+img,
+h4,
+.footer-article, 
+.product_text,
+button {
+    clear: left;
+    float: left;
+}
+.product_text {
+    width: 188px;
+    height: 33px;
     margin: 0;
     padding: 0;
     background-color: #323232;
-    border-width: unset;
 }
-.main_conteiner a {
-    width: 200px;
-    height: 20px;
+.product_text {
+    margin: 0;
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
+    padding:7px 0 0 13px;
+}
+.price {
+    float: left;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    background-color: rgba(50,50,50, 0.6);
     
+}
+.price {
+    margin: 0;
+    padding: 4px 0 0 12px;
+    width: 42px;
+    height: 36px;
+}
+.hover:hover .product_text,
+.hover:focus .product_text {
+    background-color: #1abc9c;
+}
+.hover:hover .price,
+.hover:focus .price {
+    background-color: rgba(26,188,156,0.6);
+}
+.featured_content :focus
+.product_text  {
+    background-color: #1abc9c;
+}
+.featured_content :focus
+.price {
+    background-color: rgba(26,188,156,0.6);
+}
+
+/* footer contenteiner */
+.footer_conteiner h2 {
+    color: #555252;
+}
+.footer_conteiner 
+li:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.footer_conteiner li {
+    width: 350px;
+}
+.footer_conteiner h4 {
+    /* display: inline-block; */
+    margin: 0 0 28px 0;
+    padding: 14px 0 0 0;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #555252;
+}
+h4::after {
+    display: block;
+    content: "";
+    width: 136px;
+    height: 3px;
+    margin: 11px 0 0 0;
+    background-color: #4ec6ab;
+}
+.footer_conteiner p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #555252;
+    margin: 0 0 13px 0;
+}
+button {
+    font-family: "Open Sans";
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    
+}
+button {
+    width: 160px;
+    height: 51px;
+    background-color: #4ec6ab;
+    border-radius: 3px;
+    border: none;
+}
+.footer_conteiner {
+    margin-bottom: 46px;
 }
