@@ -86,7 +86,7 @@ h2::after {
     content: "";
     width: 164px;
     height: 7px;
-    background: #1abc9c;
+    background: #4dc5ab;
     margin: 32px auto 92px;
 }
 
@@ -139,7 +139,7 @@ button {
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
-    background-color: rgba(50, 50, 50, 0.6);
+    background-color: rgba(50, 50, 50, 44%);
 
 }
 
@@ -152,20 +152,20 @@ button {
 
 .hover:hover .product_text,
 .hover:focus .product_text {
-    background-color: #1abc9c;
+    background-color: #19bb9b;
 }
 
 .hover:hover .price,
 .hover:focus .price {
-    background-color: rgba(26, 188, 156, 0.6);
+    background-color: rgba(25, 187, 155, 44%);
 }
 
 .featured_content :focus .product_text {
-    background-color: #1abc9c;
+    background-color: #19bb9b;
 }
 
 .featured_content :focus .price {
-    background-color: rgba(26, 188, 156, 0.6);
+    background-color: rgba(25, 187, 155, 44%);
 }
 
 /* footer contenteiner */
@@ -197,7 +197,7 @@ h4::after {
     width: 136px;
     height: 3px;
     margin: 11px 0 0 0;
-    background-color: #4ec6ab;
+    background-color: #4dc5ab;
 }
 
 .footer_conteiner p {
@@ -222,7 +222,7 @@ button {
 button {
     width: 160px;
     height: 51px;
-    background-color: #4ec6ab;
+    background-color: #4dc5ab;
     border-radius: 3px;
     border: none;
 }
