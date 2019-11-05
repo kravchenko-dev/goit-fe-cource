@@ -113,7 +113,6 @@ h2::after {
 
 .bottom-card {
     width: 255px;
-    height: 40px;
     background-color: #323232;
 }
 
@@ -207,22 +206,22 @@ h4::after {
     margin: 0 0 13px 0;
 }
 
-button {
+.link {
     font-family: "Open Sans";
     font-weight: 300;
     color: #ffffff;
     font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-
+    line-height: 51px;
+    padding: 15px 36px;
 }
 
-button {
+.footer-link {
     width: 160px;
     height: 51px;
     background-color: #4dc5ab;
     border-radius: 3px;
     border: none;
+    text-align: center;
 }
 
 .footer_conteiner {
