@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 header,
 main,
 .button-box {
@@ -66,17 +67,21 @@ li {
 .header_menu li:not(:last-child) {
     margin-right: 35px;
 }
+
 .wallpaper img {
     width: 100%;
 }
+
 .wallpaper,
 .box-overlay {
     position: relative;
 }
+
 .button-box {
     position: relative;
     height: 100%;
 }
+
 .slider {
     background-color: rgba(0, 0, 2, 52%);
     position: absolute;
@@ -94,7 +99,7 @@ li {
     color: #ffffff;
     position: absolute;
     top: 50%;
-    transform: translateY( -50%);
+    transform: translateY(-50%);
     font-size: 100px;
 }
 
@@ -117,7 +122,7 @@ li {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .slider-text {
@@ -125,20 +130,24 @@ li {
     color: #ffffff;
     text-transform: uppercase;
 }
+
 .upper-slider-text {
     font-size: 60px;
     line-height: 82px;
     font-weight: 900;
 }
+
 .footer-slider-text {
     font-size: 24px;
     line-height: 54px;
     font-weight: 300;
 }
+
 /* main_content */
 .main-box {
     background-color: #e9f0fd;
 }
+
 h3,
 .price,
 .new-collection a {
@@ -241,6 +250,7 @@ img {
 .new-collection :focus .price {
     background-color: rgba(255, 255, 255, 44%);
 }
+
 .main_conteiner {
     padding-bottom: 100px;
 }
@@ -257,33 +267,39 @@ img {
     left: 0;
     opacity: 0;
 }
+
 .box-overlay-icon {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .overlay-icon {
     display: inline-block;
     border: 1px solid #ffffff;
 }
+
 .basket {
     background-color: #323232;
     opacity: 1;
 }
+
 .overlay-icon:hover {
     background-color: #1abc9c;
 }
+
 .hover:hover .overlay {
     opacity: 1;
 }
+
 /* footer */
 footer {
     text-align: center;
     padding: 37px 0;
     background-color: #323232;
 }
+
 .footer-line {
     color: #ffffff;
     font-family: "Open Sans";
@@ -291,8 +307,8 @@ footer {
     font-size: 16px;
     line-height: 28px;
 }
+
 .footer-link {
     color: #19bb9b;
     text-transform: none;
 }
-
