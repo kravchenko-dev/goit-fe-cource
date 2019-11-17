@@ -190,35 +190,36 @@ p {
     color: #999999;
 }
 
-.service-icon {
+.service-item::before {
     display: block;
+    content: "";
     width: 82px;
     height: 32px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.icon-clock {
+.icon-clock::before {
     background-image: url(../img/ALARM.png);
 }
 
-.icon-diagram {
+.icon-diagram::before {
     background-image: url(../img/LINE\ GRAPH.png);
 }
 
-.icon-monitor {
+.icon-monitor::before {
     background-image: url(../img/monitor.png);
 }
 
-.icon-page {
+.icon-page::before {
     background-image: url(../img/book.png);
 }
 
-.icon-house {
+.icon-house::before {
     background-image: url(../img/HOME.png);
 }
 
-.icon-square {
+.icon-square::before {
     background-image: url(../img/IMAGE.png);
 }
 
@@ -345,13 +346,17 @@ p {
     outline: none;
 }
 
-.input-email {
-    width: 230px;
-    height: 40px;
+::placeholder {
     font-family: "Roboto-LightItalic";
     font-size: 15px;
     font-weight: 300;
     color: #cccccc;
+
+}
+
+.input-email {
+    width: 230px;
+    height: 40px;
     border: 1px solid #e5e5e5;
     border-right: 1px solid transparent;
     padding-left: 12px;
