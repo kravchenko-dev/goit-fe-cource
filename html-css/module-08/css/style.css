@@ -172,6 +172,9 @@ h4 {
 }
 
 img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     display: block;
     padding: 4px 4px;
 }
