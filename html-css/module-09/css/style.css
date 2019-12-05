@@ -20,15 +20,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
-li {
-    list-style: none;
-}
-
-a {
+ a:hover {
     text-decoration: none;
-}
+    color: #ffffff;
+  }
 
 .logo,
 h2 {
