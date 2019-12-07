@@ -1,0 +1,374 @@
+/* @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap'); */
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-LightItalic";
+    src: url(../fonts/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: "KaushanScript-Regular";
+    src: url(../fonts/KaushanScript-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    background-image: url(../img/eagle.png);
+}
+
+.conteiner-header,
+.service,
+main,
+footer {
+    width: 1201px;
+    margin: 0 auto;
+}
+
+a,
+.heading-service-item {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo,
+.heading-service,
+.our-team {
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.logo {
+    color: #95e1d3;
+    text-transform: none;
+    float: left;
+    padding: 17px 0 0 0;
+}
+
+.header-navigation {
+    padding: 34px 0 0 0;
+    list-style: none;
+    float: right;
+}
+
+.header-navigation li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.navigation-item a {
+    color: #95e1d3;
+    padding-bottom: 13px;
+}
+
+.navigation-item a,
+.heading-service-item {
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.underscore {
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: #f38181;
+    margin: 10px auto 0;
+    transition-property: width, background;
+    transition-duration: 200ms;
+}
+
+.navigation-item a:hover {
+    color: #f38181;
+
+}
+
+.navigation-item:hover .underscore {
+    transition-duration: 200ms;
+    transition-property: width, background;
+    transition-timing-function: linear;
+    width: 100%;
+}
+
+.underscore:hover .navigation-item a {
+    color: #f38181;
+
+}
+
+.navigation-item {
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* section service */
+
+.service {
+    padding-top: 123px;
+}
+
+.heading-service span,
+.our-team span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "KaushanScript-Regular";
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 14px;
+    text-transform: none;
+}
+
+.heading-service,
+.our-team {
+    text-align: center;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.heading-service::after,
+.our-team::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 35px auto 65px;
+}
+
+.service-menu-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    display: flex;
+    width: 381px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.service-item:not(:nth-child(3n)) {
+    margin-right: 20px;
+}
+
+.service-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 105px;
+}
+
+.heading-service-item {
+    margin-bottom: 23px;
+    color: #333333;
+}
+
+p {
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.service-item::before {
+    display: block;
+    content: "";
+    width: 82px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-clock::before {
+    background-image: url(../img/ALARM.png);
+}
+
+.icon-diagram::before {
+    background-image: url(../img/LINE\ GRAPH.png);
+}
+
+.icon-monitor::before {
+    background-image: url(../img/monitor.png);
+}
+
+.icon-page::before {
+    background-image: url(../img/book.png);
+}
+
+.icon-house::before {
+    background-image: url(../img/HOME.png);
+}
+
+.icon-square::before {
+    background-image: url(../img/IMAGE.png);
+}
+
+/* main */
+
+.our-team {
+    padding-top: 98px;
+}
+
+.team-heading-text {
+    width: 980px;
+    margin: 0 auto 90px;
+}
+
+.box-overlay-icon,
+.card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-section,
+.footer {
+    justify-content: space-between;
+}
+
+.card-section {
+    padding-bottom: 80px;
+}
+
+.overlay-icon {
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    border: 0.5px solid rgba(255, 255, 255, 0%);
+    box-sizing: border-box;
+    background-clip: padding-box;
+
+}
+
+.name-team,
+.position,
+.team-heading-text {
+    text-align: center;
+}
+
+.name-team {
+    padding: 30px 0 13px;
+}
+
+.name-team {
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.position {
+    font-weight: 300;
+    font-family: "Roboto-LightItalic";
+}
+
+.overlay {
+    height: 100%;
+    width: 380px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(160deg, rgba(243, 129, 129, 0.5), rgba(252, 227, 138, 1));
+    box-shadow: 10px 10px 0 0 #95e1d3;
+    opacity: 0;
+
+}
+
+.box-overlay:hover {
+    transition-property: all;
+    transform: translate(-10px, -10px);
+    transition-duration: 200ms;
+}
+
+.box-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-icon:hover {
+    background-color: #95e1d3;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-text {
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    color: #333333;
+    margin: 17px 0 17px;
+}
+
+.footer-link {
+    color: #f38181;
+    text-transform: none;
+}
+
+.footer-button {
+    width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #95e1d3;
+    border: 1px solid #95e1d3;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+::placeholder {
+    font-family: "Roboto-LightItalic";
+    font-size: 15px;
+    font-weight: 300;
+    color: #cccccc;
+
+}
+
+.input-email {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-right: 1px solid transparent;
+    padding-left: 12px;
+    outline: none;
+}
+
+.form-footer-button {
+    display: flex;
+    margin-top: 10px;
+}
