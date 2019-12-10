@@ -11,25 +11,32 @@
 </head>
 
 <body>
-    <header>
-        <div class="conteiner-header"><nav class="clearfix">
-            <a href="#" class="logo">MoGo</a>
-            <ul class="header-navigation">
-                <li class="navigation-item"><a href="#">about</a><span class="underscore"></span></li>
-                <li class="navigation-item"><a href="#">service</a><span class="underscore"></span></li>
-                <li class="navigation-item"><a href="#">work</a><span class="underscore"></span></li>
-                <li class="navigation-item"><a href="#">blog</a><span class="underscore"></span></li>
-                <li class="navigation-item"><a href="#">contact</a><span class="underscore"></span></li>
-            </ul>
-        </nav></div>
-        
-    </header>
+    <div class="conteiner">
+        <div class="conteiner-header">
+            <nav class="clearfix">
+                <a href="#" class="logo">MoGo</a>
+                <ul class="header-navigation">
+                    <li class="navigation-item"><a href="#">about</a><span class="underscore"></span></li>
+                    <li class="navigation-item"><a href="#">service</a><span class="underscore"></span></li>
+                    <li class="navigation-item"><a href="#">work</a><span class="underscore"></span></li>
+                    <li class="navigation-item"><a href="#">blog</a><span class="underscore"></span></li>
+                    <li class="navigation-item"><a href="#">contact</a><span class="underscore"></span></li>
+                    <li class="navigation-item"><a class="header-navigation-svg" href="#"><svg><use href="img/sprite.svg#shopping_cart"></use></svg></a><span class="underscore"></span></li>
+                    <li class="navigation-item"><a class="header-navigation-svg" href="#"><svg><use href="img/sprite.svg#magnifying_glass"></use></svg></a><span class="underscore"></span></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <h2 class="banner-text"><span>Creative Template</span>Welcome <br>to MoGo</h2>
+            <button type="button">Learn more</button>
+        </div>
+    </div>
     <section class="service">
-        <h2 class="heading-service"><span>We work with </span>amazing services</h2>
+        <h3 class="heading-service"><span>We work with </span>amazing services</h3>
         <ul class="service-menu-item">
             <li class="service-item icon-clock">
                 <div class="service-text">
-                    <h3 class="heading-service-item">photography</h3>
+                    <h4 class="heading-service-item">photography</h4>
                     <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor.</p>
                 </div>
@@ -37,7 +44,7 @@
             </li>
             <li class="service-item icon-diagram">
                 <div class="service-text">
-                    <h3 class="heading-service-item">web design</h3>
+                    <h4 class="heading-service-item">web design</h4>
                     <p class="service-item-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor.
                     </p>
@@ -46,28 +53,28 @@
             </li>
             <li class="service-item icon-monitor">
                 <div class="service-text">
-                    <h3 class="heading-service-item">creativity</h3>
+                    <h4 class="heading-service-item">creativity</h4>
                     <p class="service-item-text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
 
             </li>
             <li class="service-item icon-page">
                 <div class="service-text">
-                    <h3 class="heading-service-item">seo</h3>
+                    <h4 class="heading-service-item">seo</h4>
                     <p class="service-item-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                 </div>
 
             </li>
             <li class="service-item icon-house">
                 <div class="service-text">
-                    <h3 class="heading-service-item">css/html</h3>
+                    <h4 class="heading-service-item">css/html</h4>
                     <p class="service-item-text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
                 </div>
 
             </li>
             <li class="service-item icon-square">
                 <div class="service-text">
-                    <h3 class="heading-service-item">digital</h3>
+                    <h4 class="heading-service-item">digital</h4>
                     <p class="service-item-text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
 
@@ -83,16 +90,17 @@
             laboris nisi ut aliquip ex ea commodo consequat. </p>
         <div class="card-section">
             <div class="team-card">
-                <div class="box-overlay"><img class="peaple-img" src="img/Matthew_Dix.png" alt="Matthew_Dix"
-                        width="380">
+                <div class="box-overlay"><img class="peaple-img"
+                    src="img/Matthew_Dix.png"
+                    srcset="img/Matthew_Dix.png 380w, img/Matthew_Dix@2x.png 760w" sizes="380px"
+                    alt="Matthew_Dix"
+                    height="470">
                     <div class="overlay">
                         <div class="box-overlay-icon">
-                            <a href="#" class="overlay-icon"><img src="img/facebook.png" alt="facebook" width="56"></a>
-                            <a href="#" class="overlay-icon"><img src="img/twitter.png" alt="twitter" width="56"></a>
-                            <a href="#" class="overlay-icon"><img src="img/pinterest.png" alt="pinterest"
-                                    width="56"></a>
-                            <a href="#" class="overlay-icon"><img src="img/instagram.png" alt="instagram"
-                                    width="56"></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#facebook"></use></svg></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#twitter"></use></svg></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#pinterest"></use></svg></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#instagram"></use></svg></a>
                         </div>
                     </div>
                 </div>
@@ -102,16 +110,17 @@
                 </div>
             </div>
             <div class="team-card">
-                <div class="box-overlay"><img class="peaple-img" src="img/Christopher_Campbell.png"
-                        alt="Christopher_Campbell" width="380">
+                <div class="box-overlay"><img class="peaple-img"
+                    src="img/Christopher_Campbell.png"
+                    srcset="img/Christopher_Campbell.png 380w, img/Christopher_Campbell@2x.png 760w" sizes="380px"
+                    alt="Christopher_Campbell"
+                    height="470">
                     <div class="overlay">
                         <div class="box-overlay-icon">
-                            <a href="#" class="overlay-icon"><img src="img/facebook.png" alt="facebook" width="56"></a>
-                            <a href="#" class="overlay-icon"><img src="img/twitter.png" alt="twitter" width="56"></a>
-                            <a href="#" class="overlay-icon"><img src="img/pinterest.png" alt="pinterest"
-                                    width="56"></a>
-                            <a href="#" class="overlay-icon"><img src="img/instagram.png" alt="instagram"
-                                    width="56"></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#facebook"></use></svg></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#twitter"></use></svg></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#pinterest"></use></svg></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#instagram"></use></svg></a>
                         </div>
                     </div>
                 </div>
@@ -121,16 +130,17 @@
                 </div>
             </div>
             <div class="team-card">
-                <div class="box-overlay"><img class="peaple-img" src="img/Michael_Fertig.png" alt="Michael_Fertig"
-                        width="380">
+                <div class="box-overlay"><img class="peaple-img"
+                    src="img/Michael_Fertig.png"
+                    srcset="img/Michael_Fertig.png 380w, img/Michael_Fertig@2x.png 760w" sizes="380px"
+                    alt="Michael_Fertig"
+                    height="470">
                     <div class="overlay">
                         <div class="box-overlay-icon">
-                            <a href="#" class="overlay-icon"><img src="img/facebook.png" alt="facebook" width="56"></a>
-                            <a href="#" class="overlay-icon"><img src="img/twitter.png" alt="twitter" width="56"></a>
-                            <a href="#" class="overlay-icon"><img src="img/pinterest.png" alt="pinterest"
-                                    width="56"></a>
-                            <a href="#" class="overlay-icon"><img src="img/instagram.png" alt="instagram"
-                                    width="56"></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#facebook"></use></svg></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#twitter"></use></svg></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#pinterest"></use></svg></a>
+                            <a href="#" class="overlay-icon"><svg><use href="img/sprite.svg#instagram"></use></svg></a>
                         </div>
                     </div>
                 </div>

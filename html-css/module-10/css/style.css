@@ -32,9 +32,15 @@
 
 /* header */
 
-header {
+.conteiner {
     width: 100%;
-    background-image: url(../img/eagle.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f38181e6), to(#fce38ae6)),
+        url(../img/eagle.png) no-repeat center/cover;
+    background: -o-linear-gradient(#f38181e6, #fce38ae6),
+        url(../img/eagle.png) no-repeat center/cover;
+    background: linear-gradient(#f38181e6, #fce38ae6),
+        url(../img/eagle.png) no-repeat center/cover;
+
 }
 
 .conteiner-header,
@@ -46,7 +52,9 @@ footer {
 }
 
 a,
-.heading-service-item {
+.heading-service-item,
+.banner-text,
+button {
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -60,10 +68,16 @@ a,
 }
 
 .logo {
-    color: #95e1d3;
     text-transform: none;
     float: left;
     padding: 17px 0 0 0;
+}
+
+.logo,
+.navigation-item a,
+.banner-text,
+button {
+    color: #ffffff;
 }
 
 .header-navigation {
@@ -73,11 +87,14 @@ a,
 }
 
 .header-navigation li:not(:last-child) {
-    margin-right: 60px;
+    margin-right: 52px;
+}
+
+.header-navigation li:nth-child(6) {
+    margin-right: 40px;
 }
 
 .navigation-item a {
-    color: #95e1d3;
     padding-bottom: 13px;
 }
 
@@ -88,19 +105,28 @@ a,
     font-size: 14px;
 }
 
+.header-navigation-svg svg {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+}
+
 .underscore {
     display: block;
     width: 0%;
     height: 3px;
-    background: #f38181;
+    background: #fce38a;
     margin: 10px auto 0;
     transition-property: width, background;
     transition-duration: 200ms;
 }
 
 .navigation-item a:hover {
-    color: #f38181;
+    color: #fce38a;
+}
 
+.navigation-item a:hover svg {
+    fill: #fce38a;
 }
 
 .navigation-item:hover .underscore {
@@ -110,10 +136,6 @@ a,
     width: 100%;
 }
 
-.underscore:hover .navigation-item a {
-    color: #f38181;
-
-}
 
 .navigation-item {
     display: inline-block;
@@ -125,12 +147,43 @@ a,
     clear: both;
 }
 
+nav {
+    margin-bottom: 122px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner-text {
+    font-size: 150px;
+    line-height: 140px;
+    margin-bottom: 112px;
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+
+}
+
+.banner .banner-text span {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 160px;
+    height: 40px;
+    border: 3px solid #ffffff;
+    background: none;
+    margin-bottom: 230px;
+
+}
+
 /* section service */
 
 .service {
     padding-top: 123px;
 }
 
+.banner-text span,
 .heading-service span,
 .our-team span {
     display: flex;
@@ -142,6 +195,11 @@ a,
     color: #333333;
     margin-bottom: 14px;
     text-transform: none;
+}
+
+.banner-text span {
+    font-size: 72px;
+    color: #ffffff;
 }
 
 .heading-service,
@@ -202,30 +260,31 @@ p {
     height: 32px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 
 .icon-clock::before {
-    background-image: url(../img/ALARM.png);
+    background-image: url(../img/ALARM.svg);
 }
 
 .icon-diagram::before {
-    background-image: url(../img/LINE\ GRAPH.png);
+    background-image: url(../img/LINE_GRAPH.svg);
 }
 
 .icon-monitor::before {
-    background-image: url(../img/monitor.png);
+    background-image: url(../img/monitor.svg);
 }
 
 .icon-page::before {
-    background-image: url(../img/book.png);
+    background-image: url(../img/book.svg);
 }
 
 .icon-house::before {
-    background-image: url(../img/HOME.png);
+    background-image: url(../img/HOME.svg);
 }
 
 .icon-square::before {
-    background-image: url(../img/IMAGE.png);
+    background-image: url(../img/IMAGE.svg);
 }
 
 /* main */
@@ -264,7 +323,17 @@ p {
     border: 0.5px solid rgba(255, 255, 255, 0%);
     box-sizing: border-box;
     background-clip: padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.box-overlay-icon svg {
+    width: 26px;
+    height: 26px;
+    fill: #f38181;
+    transition: fill 200ms linear;
 }
 
 .name-team,
@@ -314,7 +383,11 @@ p {
 }
 
 .overlay-icon:hover {
-    background-color: #95e1d3;
+    background-color: #f38181;
+}
+
+.overlay-icon:hover svg {
+    fill: #ffffff;
 }
 
 /* footer */
@@ -371,4 +444,19 @@ p {
 .form-footer-button {
     display: flex;
     margin-top: 10px;
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+
+    .conteiner {
+        width: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f38181e6), to(#fce38ae6)),
+            url(../img/eagle@2x.png) no-repeat center/cover;
+        background: -o-linear-gradient(#f38181e6, #fce38ae6),
+            url(../img/eagle@2x.png) no-repeat center/cover;
+        background: linear-gradient(#f38181e6, #fce38ae6),
+            url(../img/eagle@2x.png) no-repeat center/cover;
+
+    }
 }
