@@ -353,6 +353,14 @@ p {
     padding-bottom: 80px;
 }
 
+.box-overlay {
+    position: relative;
+}
+
+.peaple-img {
+    display: block;
+}
+
 .overlay-icon {
     width: 56px;
     height: 56px;
