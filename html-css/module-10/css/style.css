@@ -1,4 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap'); */
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+
 @font-face {
     font-family: "Montserrat-Regular";
     src: url(../fonts/Montserrat-Regular.ttf);
@@ -27,16 +29,17 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /* header */
 
 .conteiner {
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f38181e6), to(#fce38ae6)),
-        url(../img/eagle.png) no-repeat center/cover;
     background: -o-linear-gradient(#f38181e6, #fce38ae6),
+        url(../img/eagle.png) no-repeat center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f38181e6), to(#fce38ae6)),
         url(../img/eagle.png) no-repeat center/cover;
     background: linear-gradient(#f38181e6, #fce38ae6),
         url(../img/eagle.png) no-repeat center/cover;
@@ -117,8 +120,12 @@ button {
     height: 3px;
     background: #fce38a;
     margin: 10px auto 0;
+    -webkit-transition-property: width, background;
+    -o-transition-property: width, background;
     transition-property: width, background;
-    transition-duration: 200ms;
+    -webkit-transition-duration: 200ms;
+         -o-transition-duration: 200ms;
+            transition-duration: 200ms;
 }
 
 .navigation-item a:hover {
@@ -130,9 +137,15 @@ button {
 }
 
 .navigation-item:hover .underscore {
-    transition-duration: 200ms;
+    -webkit-transition-duration: 200ms;
+         -o-transition-duration: 200ms;
+            transition-duration: 200ms;
+    -webkit-transition-property: width, background;
+    -o-transition-property: width, background;
     transition-property: width, background;
-    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
     width: 100%;
 }
 
@@ -186,8 +199,12 @@ button {
 .banner-text span,
 .heading-service span,
 .our-team span {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     font-family: "KaushanScript-Regular";
     font-weight: 400;
@@ -220,16 +237,25 @@ button {
 }
 
 .service-menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .service-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 381px;
     list-style: none;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .service-item:not(:nth-child(3n)) {
@@ -300,16 +326,27 @@ p {
 
 .box-overlay-icon,
 .card-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
 }
 
 .card-section,
 .footer {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .card-section {
@@ -321,11 +358,18 @@ p {
     height: 56px;
     background-color: #fce38a;
     border: 0.5px solid rgba(255, 255, 255, 0%);
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-clip: padding-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 
@@ -333,6 +377,8 @@ p {
     width: 26px;
     height: 26px;
     fill: #f38181;
+    -webkit-transition: fill 200ms linear;
+    -o-transition: fill 200ms linear;
     transition: fill 200ms linear;
 }
 
@@ -364,18 +410,30 @@ p {
     left: 0;
     top: 0;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -o-linear-gradient(290deg, rgba(243, 129, 129, 0.5), rgba(252, 227, 138, 1));
     background: linear-gradient(160deg, rgba(243, 129, 129, 0.5), rgba(252, 227, 138, 1));
-    box-shadow: 10px 10px 0 0 #95e1d3;
+    -webkit-box-shadow: 10px 10px 0 0 #95e1d3;
+            box-shadow: 10px 10px 0 0 #95e1d3;
     opacity: 0;
 
 }
 
 .box-overlay:hover {
+    -webkit-transition-property: all;
+    -o-transition-property: all;
     transition-property: all;
-    transform: translate(-10px, -10px);
-    transition-duration: 200ms;
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-transition-duration: 200ms;
+         -o-transition-duration: 200ms;
+            transition-duration: 200ms;
 }
 
 .box-overlay:hover .overlay {
@@ -393,6 +451,8 @@ p {
 /* footer */
 
 .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-top: 1px solid #e5e5e5;
 }
@@ -424,6 +484,38 @@ p {
     outline: none;
 }
 
+::-webkit-input-placeholder {
+    font-family: "Roboto-LightItalic";
+    font-size: 15px;
+    font-weight: 300;
+    color: #cccccc;
+
+}
+
+::-moz-placeholder {
+    font-family: "Roboto-LightItalic";
+    font-size: 15px;
+    font-weight: 300;
+    color: #cccccc;
+
+}
+
+:-ms-input-placeholder {
+    font-family: "Roboto-LightItalic";
+    font-size: 15px;
+    font-weight: 300;
+    color: #cccccc;
+
+}
+
+::-ms-input-placeholder {
+    font-family: "Roboto-LightItalic";
+    font-size: 15px;
+    font-weight: 300;
+    color: #cccccc;
+
+}
+
 ::placeholder {
     font-family: "Roboto-LightItalic";
     font-size: 15px;
@@ -442,18 +534,22 @@ p {
 }
 
 .form-footer-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
 }
 
-@media (min-resolution: 192dpi),
+@media (-webkit-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
+(min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 
     .conteiner {
         width: 100%;
-        background: -webkit-gradient(linear, left top, left bottom, from(#f38181e6), to(#fce38ae6)),
-            url(../img/eagle@2x.png) no-repeat center/cover;
         background: -o-linear-gradient(#f38181e6, #fce38ae6),
+            url(../img/eagle@2x.png) no-repeat center/cover;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f38181e6), to(#fce38ae6)),
             url(../img/eagle@2x.png) no-repeat center/cover;
         background: linear-gradient(#f38181e6, #fce38ae6),
             url(../img/eagle@2x.png) no-repeat center/cover;
