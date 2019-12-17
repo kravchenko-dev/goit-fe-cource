@@ -1,0 +1,52 @@
+.our-team {
+  padding-top: 98px;
+  @extend %font-size-30-weight-700, %text-transform-service;
+
+  span {
+    @extend %span;
+  }
+
+  &::after {
+    @extend %service-team-after;
+  }
+}
+
+.team-heading-text {
+  width: 980px;
+  margin: 0 auto 90px;
+}
+
+.card-section {
+  padding-bottom: 80px;
+  @extend %overlay-card-section, %card-footer-position;
+}
+
+.box-overlay {
+  position: relative;
+}
+
+.peaple-img {
+  display: block;
+}
+
+.name-team,
+.position,
+.team-heading-text {
+  text-align: center;
+}
+
+.name-team {
+  padding: 30px 0 13px;
+}
+
+.name-team {
+  font-family: $font-menu;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.position {
+  font-weight: 300;
+  font-family: $font-position;
+}

@@ -1,6 +1,19 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-
+@import 'fonts';
+@import 'variables';
 @import 'normalize.scss';
 @import 'base.scss';
+
+/*components*/
+@import 'components/placeholder_selector.scss';
+@import 'components/conteiner.scss';
+@import 'components/logo';
+@import 'components/header-navigation.scss';
+@import 'components/underscore';
+@import 'components/banner';
+@import 'components/service';
+@import 'components/team';
+@import 'components/overlay';
+@import 'components/footer';

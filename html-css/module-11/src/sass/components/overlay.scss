@@ -1,0 +1,76 @@
+.overlay-icon {
+  width: 56px;
+  height: 56px;
+  background-color: $underscore-bg-color;
+  border: 0.5px solid rgba(255, 255, 255, 0%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+}
+
+.box-overlay-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: $heading-after-text;
+  -webkit-transition: fill 200ms linear;
+  -o-transition: fill 200ms linear;
+  transition: fill 200ms linear;
+}
+
+.box-overlay-icon {
+  @extend %overlay-card-section;
+}
+
+.overlay {
+  height: 100%;
+  width: 380px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: -o-linear-gradient(290deg, rgba(243, 129, 129, 0.5), rgba(252, 227, 138, 1));
+  background: linear-gradient(160deg, rgba(243, 129, 129, 0.5), rgba(252, 227, 138, 1));
+  -webkit-box-shadow: 10px 10px 0 0 #95e1d3;
+  box-shadow: 10px 10px 0 0 #95e1d3;
+  opacity: 0;
+
+}
+
+.box-overlay:hover {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+
+.box-overlay:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-icon:hover {
+  background-color: #f38181;
+}
+
+.overlay-icon:hover svg {
+  fill: $header-text-color;
+}

@@ -1,0 +1,51 @@
+.header-navigation {
+  padding: 34px 0 0 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: right;
+}
+
+.header-navigation li:not(:last-child) {
+  margin-right: 52px;
+}
+
+.header-navigation li:nth-child(6) {
+  margin-right: 40px;
+}
+
+.navigation-item a {
+  padding-bottom: 13px;
+  @extend %text-decoration, %font-size-1weignt-400;
+  color: $header-text-color;
+
+  &:hover{
+    color: $underscore-bg-color;
+  }
+}
+
+.navigation-item a:hover svg {
+  fill: $underscore-bg-color;
+}
+
+.navigation-item:hover .underscore {
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-property: width, background;
+  -o-transition-property: width, background;
+  transition-property: width, background;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  width: 100%;
+}
+
+.navigation-item {
+  display: inline-block;
+}
+
+.header-navigation-svg svg {
+  width: 18px;
+  height: 18px;
+  fill: $header-text-color;
+}

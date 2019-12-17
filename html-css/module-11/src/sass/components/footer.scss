@@ -1,0 +1,92 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid $footer-border-color;
+  @extend %card-footer-position;
+}
+
+.footer-text {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  color: $heading-text-color;
+  margin: 17px 0 17px;
+}
+
+.footer-link {
+  color: $heading-after-text;
+  text-decoration: none;
+}
+
+.footer-button {
+  width: 150px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-size: 14px;
+  color: $header-text-color;
+  background-color: $footer-button-color;
+  border: 1px solid $footer-button-color;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  @extend %text-decoration;
+  color: $header-text-color;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Roboto-LightItalic";
+  font-size: 15px;
+  font-weight: 300;
+  color: $placeholder-color;
+
+}
+
+::-moz-placeholder {
+  font-family: "Roboto-LightItalic";
+  font-size: 15px;
+  font-weight: 300;
+  color: $placeholder-color;
+
+}
+
+:-ms-input-placeholder {
+  font-family: "Roboto-LightItalic";
+  font-size: 15px;
+  font-weight: 300;
+  color: $placeholder-color;
+
+}
+
+::-ms-input-placeholder {
+  font-family: "Roboto-LightItalic";
+  font-size: 15px;
+  font-weight: 300;
+  color: $placeholder-color;
+
+}
+
+::placeholder {
+  font-family: "Roboto-LightItalic";
+  font-size: 15px;
+  font-weight: 300;
+  color: $placeholder-color;
+
+}
+
+.input-email {
+  width: 230px;
+  height: 40px;
+  border: 1px solid $footer-border-color;
+  border-right: 1px solid transparent;
+  padding-left: 12px;
+  outline: none;
+}
+
+.form-footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}

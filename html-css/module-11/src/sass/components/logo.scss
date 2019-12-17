@@ -1,0 +1,7 @@
+.logo {
+  display: inline-flex;
+  text-decoration: none;
+  padding: 17px 0 0 0;
+  @extend %font-size-30-weight-700;
+  color: $header-text-color;
+}

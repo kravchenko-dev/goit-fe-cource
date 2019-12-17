@@ -1,0 +1,13 @@
+.underscore {
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: $underscore-bg-color;
+  margin: 10px auto 0;
+  -webkit-transition-property: width, background;
+  -o-transition-property: width, background;
+  transition-property: width, background;
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+}

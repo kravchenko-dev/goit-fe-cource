@@ -1,0 +1,93 @@
+.service {
+  padding-top: 123px;
+}
+
+.service-menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.heading-service {
+  @extend %font-size-30-weight-700, %text-transform-service;
+
+  span {
+    @extend %span;
+  }
+
+  &::after {
+    @extend %service-team-after;
+  }
+}
+
+.service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 381px;
+  list-style: none;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.service-item:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.service-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 105px;
+}
+
+.heading-service-item {
+  margin-bottom: 23px;
+  color: $heading-text-color;
+  @extend %text-decoration, %font-size-1weignt-400 ;
+}
+
+p {
+  font-family: $font-article;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $article-text-color;
+}
+
+.service-item::before {
+  display: block;
+  content: "";
+  width: 82px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-clock::before {
+  background-image: url(../images/ALARM.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/LINE_GRAPH.svg);
+}
+
+.icon-monitor::before {
+  background-image: url(../images/monitor.svg);
+}
+
+.icon-page::before {
+  background-image: url(../images/book.svg);
+}
+
+.icon-house::before {
+  background-image: url(../images/HOME.svg);
+}
+
+.icon-square::before {
+  background-image: url(../images/IMAGE.svg);
+}
