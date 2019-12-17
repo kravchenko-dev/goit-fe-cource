@@ -6,19 +6,19 @@
     url(../images/eagle.png) no-repeat center/cover;
   background: linear-gradient(#f38181e6, #fce38ae6),
     url(../images/eagle.png) no-repeat center/cover;
+}
 
-  @media (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .conteiner {
-      width: 100%;
-      background: -o-linear-gradient(#f38181e6, #fce38ae6),
-        url(../images/eagle@2x.png) no-repeat center/cover;
-      background: -webkit-gradient(linear, left top, left bottom, from(#f38181e6), to(#fce38ae6)),
-        url(../images/eagle@2x.png) no-repeat center/cover;
-      background: linear-gradient(#f38181e6, #fce38ae6),
-        url(../images/eagle@2x.png) no-repeat center/cover;
-    }
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .conteiner {
+    width: 100%;
+    background: -o-linear-gradient(#f38181e6, #fce38ae6),
+      url(../images/eagle@2x.png) no-repeat center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f38181e6), to(#fce38ae6)),
+      url(../images/eagle@2x.png) no-repeat center/cover;
+    background: linear-gradient(#f38181e6, #fce38ae6),
+      url(../images/eagle@2x.png) no-repeat center/cover;
   }
 }
