@@ -1,0 +1,47 @@
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 110px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section__haup {
+  font-family: $secondary-font-stack;
+  font-size: 24px;
+  line-height: 29px;
+  color: $color-fon;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 60px;
+    background-color: $color-section;
+    margin: 15px auto 0;
+  }
+}
+
+.section__teil{
+  color: $color-fon;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 72px;
+}
+
+.section__text {
+  font-family: $font-section;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-section-text;
+  text-align: center;
+  width: 81.667%;
+  margin: 46px auto 0;
+}

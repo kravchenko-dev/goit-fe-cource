@@ -1,0 +1,35 @@
+.header-text__about {
+  margin-top: 186px;
+  font-size: 72px;
+  font-family: $secondary-font-stack;
+  color: $color-white;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.header-text__title {
+  margin-top: 70px;
+  margin: 0 auto;
+  width: 68.42%;
+  font-size: 150px;
+  color: $color-white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.933;
+}
+
+.header-text__button {
+  margin-top: 124px;
+  color: $color-white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $color-white;
+  background-color: rgba(0, 0, 0, 0);
+  width: 164px;
+  height: 44px;
+  cursor: pointer;
+}

@@ -1,0 +1,98 @@
+.servisen__suggest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-top: 66px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-between;
+}
+
+.servisen__suggest > li {
+  width: 30%;
+  padding-left: 83px;
+}
+
+.servisen__kopf {
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 17px;
+}
+
+.servisen__item--uhr h3::before {
+  content: "";
+  display: block;
+  background: url("img/icon/alarm.svg") no-repeat;
+  width: 32px;
+  height: 31px;
+  -webkit-transform: translateX(-63px) translateY(100%);
+  -ms-transform: translateX(-63px) translateY(100%);
+  transform: translateX(-63px) translateY(100%);
+  fill: #95e1d3;
+}
+
+.servisen__item--graph h3::before {
+  content: "";
+  display: block;
+  background: url("img/icon/graph.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translateX(-63px) translateY(100%);
+  -ms-transform: translateX(-63px) translateY(100%);
+  transform: translateX(-63px) translateY(100%);
+  fill: #95e1d3;
+}
+
+.servisen__item--pc h3::before {
+  content: "";
+  display: block;
+  background: url("img/icon/pc.svg") no-repeat;
+  width: 32px;
+  height: 28px;
+  -webkit-transform: translateX(-63px) translateY(100%);
+  -ms-transform: translateX(-63px) translateY(100%);
+  transform: translateX(-63px) translateY(100%);
+}
+
+.servisen__item--buch h3::before {
+  content: "";
+  display: block;
+  background: url("img/icon/book.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translateX(-63px) translateY(100%);
+  -ms-transform: translateX(-63px) translateY(100%);
+  transform: translateX(-63px) translateY(100%);
+}
+
+.servisen__item--haus h3::before {
+  content: "";
+  display: block;
+  background: url("img/icon/home.svg") no-repeat;
+  width: 32px;
+  height: 31px;
+  -webkit-transform: translateX(-63px) translateY(100%);
+  -ms-transform: translateX(-63px) translateY(100%);
+  transform: translateX(-63px) translateY(100%);
+}
+
+.servisen__item--img h3::before {
+  content: "";
+  display: block;
+  background: url("img/icon/aim.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translateX(-63px) translateY(100%);
+  -ms-transform: translateX(-63px) translateY(100%);
+  transform: translateX(-63px) translateY(100%);
+}
+
+.servisen__text {
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  line-height: 24px;
+}

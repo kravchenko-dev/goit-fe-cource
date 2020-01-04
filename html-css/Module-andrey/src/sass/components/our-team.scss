@@ -1,0 +1,17 @@
+.our-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-top: 90px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 0;
+  padding-left: 0;
+}
+
+.our-team__item {
+  position: relative;
+  width: 380px;
+}

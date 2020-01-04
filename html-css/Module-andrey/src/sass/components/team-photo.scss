@@ -1,0 +1,44 @@
+.team-photo {
+  width: 380px;
+  background-color: $color-bg-blue;
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  -o-transition: transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
+}
+
+.our-team__item .team-photo__image {
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  -o-transition: transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
+}
+
+.our-team__item:hover .team-photo__image {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+}
+
+.team-photo__name {
+  font-size: 14px;
+  font-family: $main-font-stack;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+  color: $color-fon;
+  text-transform: uppercase;
+  line-height: 17px;
+}
+
+.team-photo__position {
+  font-family: $font-section;
+  font-size: 15px;
+  color: $color-grey;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 10px;
+}
